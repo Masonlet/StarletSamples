@@ -1,13 +1,13 @@
-#ifdef NDEBUG
+#ifndef NDEBUG
 	#define _CRTDBG_MAP_ALLOC
 	#include <crtdbg.h>
 	#include <cstdlib>
 #endif
 
-#include "starletengine/engine.hpp"
+#include <StarletEngine/engine.hpp>
 
 int main() {
-#ifdef NDEBUG
+#ifndef NDEBUG
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 	//_CrtSetBreakAlloc();
 #endif
