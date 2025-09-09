@@ -17,9 +17,8 @@ int main() {
 
 	if (!engine.initialize(1920, 1200, "Test")) 
 		return -1;
-	if (!engine.setScene("SceneTest"))          
-		return -1;
-	if (!engine.loadSceneAssets())              
+
+	if (!engine.loadScene("SceneTest"))          
 		return -1;
 	
 	engine.run();
