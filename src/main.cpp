@@ -18,7 +18,14 @@ int main() {
 	if (!engine.initialize(1920, 1200, "Test")) 
 		return -1;
 
-	if (!engine.loadScene("SceneTest"))          
+	/* Current Scene(s)
+		- Default
+		- EmptyScene
+		- GridScene
+		- PrimitiveScene
+		- TestScene
+	*/
+	if (!engine.loadScene("TestScene"))          
 		return -1;
 	
 	engine.run();
