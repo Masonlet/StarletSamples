@@ -15,7 +15,7 @@ int main() {
 	Engine engine;
 	engine.assetPath = std::string(ASSET_DIR);
 
-	if (!engine.initialize(1920, 1200, "Test")) 
+	if (!engine.initialize(1920, 1080, "Test")) 
 		return -1;
 
 	/* Current Scene(s)
