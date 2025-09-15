@@ -1,5 +1,5 @@
-# StartletTesting
-A repository for testing the Starlet Engine.
+# StarletSamples
+A repository for demonstrating the Starlet Engine.
 Includes sample scenes, meshes, textures, and shaders.
 
 ## Sample Scenes
@@ -14,8 +14,8 @@ This project uses **CMake**. Follow these steps to build:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Masonlet/StarletTesting.git
-cd StarletTesting
+git clone https://github.com/Masonlet/StarletSamples.git
+cd StarletSamples
 ```
 
 ### 2. Create a Build Directory and Generate Build Files
