@@ -34,9 +34,14 @@ source_group("Assets\\Textures" FILES ${ASSET_TEXTURES})
 target_include_directories(${SAMPLE_NAME} PUBLIC "${INC_DIR}")
 
 include(FetchContent)
-FetchContent_Declare(StarletEngine GIT_REPOSITORY https://github.com/masonlet/starletengine.git GIT_TAG main)
-FetchContent_MakeAvailable(StarletEngine)
 
+FetchContent_Declare(StarletEngine GIT_REPOSITORY https://github.com/masonlet/starletengine.git GIT_TAG main)
+FetchContent_Declare(StarletMath GIT_REPOSITORY https://github.com/masonlet/starletmath.git GIT_TAG main)
+FetchContent_Declare(StarletParsers GIT_REPOSITORY https://github.com/masonlet/starletparsers.git GIT_TAG main)
+FetchContent_Declare(StarletScene GIT_REPOSITORY https://github.com/masonlet/starletscene.git GIT_TAG main)
+FetchContent_Declare(StarletGraphics GIT_REPOSITORY https://github.com/masonlet/starletgraphics.git GIT_TAG main)
+FetchContent_Declare(StarletControls GIT_REPOSITORY https://github.com/masonlet/starletcontrols.git GIT_TAG main)
+FetchContent_MakeAvailable(StarletEngine StarletMath StarletParsers StarletScene StarletGraphics StarletControls)
 target_link_libraries(${SAMPLE_NAME} PUBLIC StarletEngine)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
