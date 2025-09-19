@@ -33,7 +33,7 @@ source_group("Assets\\Textures" FILES ${ASSET_TEXTURES})
 
 target_include_directories(${SAMPLE_NAME} PUBLIC "${INC_DIR}")
 
-if(NOT STARLET_BUILD_LOCAL)
+if(NOT BUILD_LOCAL)
     include(FetchContent)
 
     FetchContent_Declare(StarletEngine GIT_REPOSITORY https://github.com/masonlet/starletengine.git GIT_TAG main)
