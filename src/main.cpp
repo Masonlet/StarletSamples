@@ -23,8 +23,9 @@ int main() {
 		- GridScene
 		- PrimitiveScene
 		- TestScene
+		- VelocityScene
 	*/
-  if (!engine.loadScene("TestScene"))          
+  if (!engine.loadScene("VelocityScene"))          
 		return -1;
 	
 	engine.run();
