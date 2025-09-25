@@ -1,13 +1,12 @@
 # StarletSamples
-A repository for demonstrating the Starlet Engine.
-Includes sample scenes, meshes, textures, and shaders.
+A repository for demonstrating the Starlet Engine, including sample scenes, meshes, textures, and shaders.
 
 ## Sample Scenes
-
-- `EmptyScene` : A single camera and skybox
-- `GridScene` : Shows the functionality of **squareGrid** and **cubeGrid**
-- `PrimitiveScene` : Shows the functionality of **triangle**, **square**, **cube**
+- `EmptyScene` : A minimal scene with a single camera and skybox.
+- `GridScene` : Demonstrates **squareGrid** and **cubeGrid** functionality.
+- `PrimitiveScene` : Demonstrates **triangle**, **square**, and **cube** primitives.
 - `TestScene` : A mixed set of models with different colours, modes, textures, lighting, for general debugging.
+- `VelocityScene` : Demonstrates VelocityComponent usage and dynamic object movement.
 
 ## Building the Project
 This project uses **CMake**. Follow these steps to build:
