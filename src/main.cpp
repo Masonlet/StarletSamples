@@ -25,7 +25,7 @@ int main() {
 		- TestScene
 		- VelocityScene
 	*/
-  if (!engine.loadScene("VelocityScene"))          
+  if (!engine.loadScene("TestScene"))          
 		return -1;
 	
 	engine.run();
