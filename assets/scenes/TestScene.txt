@@ -6,15 +6,17 @@ camera, on, Cam3, 34.509 0.482 1.446, -18.500 -0.000, 40.000, 0.100 25000.000, 1
 comment, enabled(on/off), colour(rgb)
 ambient, on, 1.000 1.000 1.000
 
-comment, name, bmpPath
+comment, name, bmpPath/tgaPath
 texture, Lava, Lava_Texture.bmp, 1.0, 1 1
+texture, Water, Water_Texture.tga, 1.0, 1 1
 
 model, on, off, skybox, Isoshphere_smooth_xyz_n_rgba_uv.ply, 0.000 0.000 0.000, 0.000 -0.500 0.000, 20000.000 20000.000 20000.000, PLY, 1.000 1.000 1.000 32.000
 textureCube, skybox, TropicalSunnyDayLeft2048.bmp TropicalSunnyDayRight2048.bmp TropicalSunnyDayUp2048.bmp TropicalSunnyDayDown2048.bmp TropicalSunnyDayBack2048.bmp TropicalSunnyDayFront2048.bmp, 1.0, 1 1
 
 comment, enabled(on/off), lighting(on/off), name, meshPath, pos(xyz), rot(xyz), scale(xyz), colour(Int, Named Coloured, Random, Rainbow, PLY), specular(rgb, power)
 model, on, on, cow, cow_xyz_n_rgba.ply, 0.000 0.000 0.000, 0.000 -0.000 0.000, 1.000 1.000 1.000, 255 255 0 255, 100.000 100.000 100.000 1280.000
-model, off, on, cow2, cow_xyz_n_rgba.ply, 20.000 0.000 0.000, 0.000 -0.000 0.000, 1.000 1.000 1.000, 255 255 0 255, 1.000 1.000 1.000 92.000
+model, on, on, cow2, cow_xyz_n_rgba_UV.ply, 20.000 0.000 0.000, 0.000 -0.000 0.000, 1.000 1.000 1.000, 0 0 255 255, 1.000 1.000 1.000 32.000
+textureAdd, cow2, 0, Water, 1.0
 model, on, on, cow3, cow_xyz_n_rgba_UV.ply, 40.000 0.000 0.000, 0.000 -0.000 0.000, 1.000 1.000 1.000, 255 255 0 255, 1.000 1.000 1.000 64.000
 textureAdd, cow3, 0, Lava, 1.0
 model, on, on, cow4, cow_xyz_n_rgba.ply, 60.000 0.000 0.000, 0.000 -0.000 0.000, 1.000 1.000 1.000, 0 0 255 125, 1.000 1.000 1.000 32.000
