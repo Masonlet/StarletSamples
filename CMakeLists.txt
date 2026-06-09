@@ -34,27 +34,27 @@ if(NOT BUILD_LOCAL)
     include(FetchContent)
 
     FetchContent_Declare(starlet_engine
-      GIT_REPOSITORY https://github.com/masonlet/starlet-engine.git 
+      GIT_REPOSITORY https://github.com/starlet-libs/engine.git
       GIT_TAG main
     )
     FetchContent_Declare(starlet_math
-      GIT_REPOSITORY https://github.com/masonlet/starlet-math.git 
+      GIT_REPOSITORY https://github.com/starlet-libs/math.git
       GIT_TAG main
     )
     FetchContent_Declare(starlet_serializer 
-      GIT_REPOSITORY https://github.com/masonlet/starlet-serializer.git 
+      GIT_REPOSITORY https://github.com/starlet-libs/serializer.git
       GIT_TAG main
     )
     FetchContent_Declare(starlet_scene
-      GIT_REPOSITORY https://github.com/masonlet/starlet-scene.git 
+      GIT_REPOSITORY https://github.com/starlet-libs/scene.git
       GIT_TAG main
     )
     FetchContent_Declare(starlet_graphics
-      GIT_REPOSITORY https://github.com/masonlet/starlet-graphics.git 
+      GIT_REPOSITORY https://github.com/starlet-libs/graphics.git
       GIT_TAG main
     )
     FetchContent_Declare(starlet_controls
-      GIT_REPOSITORY https://github.com/masonlet/starlet-controls.git 
+      GIT_REPOSITORY https://github.com/starlet-libs/controls.git
       GIT_TAG main
     )
 
